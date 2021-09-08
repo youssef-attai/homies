@@ -1,0 +1,56 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+*::selection {background-color: #272;}
+
+*:focus {outline: none;}
+
+html, body {
+    height: 100%;
+    background-color: black;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+input, button, .sign-up-div {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+input {
+    background-color: #222;
+    color: #5f5;
+}
+
+button {
+    transition: background-color 0.25s;
+    background-color: #333;
+    color: white;
+}
+
+button:hover {
+    background-color: #262;
+}

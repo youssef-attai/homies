@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>homies</title>
+</head>
+<body>
+    <div class="container">
+      <div class="sign-up-div">
+        <h3>Sign Up</h3>
+        <input type="email" placeholder="Email" id="email-field">
+        <input type="password" placeholder="Password" id="password-field">
+        <button id="sign-up-button">Sign Up</button>
+      </div>
+    </div>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyD_-Bd5nSAFBmHbeal5LLDYRQJSAjMSOfo",
+        authDomain: "homies-2ace6.firebaseapp.com",
+        databaseURL: "https://homies-2ace6-default-rtdb.firebaseio.com",
+        projectId: "homies-2ace6",
+        storageBucket: "homies-2ace6.appspot.com",
+        messagingSenderId: "301058912780",
+        appId: "1:301058912780:web:455228ec937a4d0a9b3429",
+        measurementId: "G-RTB9N0XHMQ"
+      };
+      const app = initializeApp(firebaseConfig);
+    </script>
+    <script type="module" src="script.js"></script>
+  
+</body>
+</html>
