@@ -1,3 +1,16 @@
+const signInCard = document.querySelector(".sign-in-card");
+const signUpCard = document.querySelector(".sign-up-card");
+const notHomieYet = document.querySelector("#not-homie-yet");
+const alreadyHomie = document.querySelector("#already-homie");
+
+const toggleSignInUpCards = () => {
+    signUpCard.classList.toggle("invisible-card");
+    signInCard.classList.toggle("invisible-card");
+}
+
+notHomieYet.addEventListener("click", toggleSignInUpCards);
+alreadyHomie.addEventListener("click", toggleSignInUpCards);
+
 auth.onAuthStateChanged((user)=>{
     console.log("onAuthStateChanged");
     if (user) {
@@ -17,3 +30,4 @@ const signIn = () => {
         console.log(err.code, err.message);
     });
 };
+

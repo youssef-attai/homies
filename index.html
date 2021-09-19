@@ -13,12 +13,25 @@
 </head>
 <body>
     <div class="container">
-      <div class="sign-up-div">
-        <h3>Sign Up</h3>
-        <input type="email" placeholder="Email" id="email-field">
-        <input type="password" placeholder="Password" id="password-field">
-        <button id="sign-up-button">Sign Up</button>
+
+      <div class="form-card sign-up-card invisible-card">
+        <h2>Not a homie?<br>become one NOW.</h2>
+        <input type="text" placeholder="Username" id="username">
+        <input type="email" placeholder="Email" id="email">
+        <input type="password" placeholder="Password" id="password">
+        <input type="password" placeholder="Confirm password" id="confirm-password">
+        <button id="sign-up">Sign up</button>
+        <p id="already-homie">already a homie? click here to sign in.</p>
       </div>
+      
+      <div class="form-card sign-in-card">
+        <h2>yo homie,<br>how you doin?</h2>
+        <input type="text" placeholder="Username" id="username">
+        <input type="password" placeholder="Password" id="password">
+        <button id="sign-in">Sign in</button>
+        <p id="not-homie-yet">not a homie yet? click here to sign up.</p>
+      </div>
+
     </div>
 
     <script>

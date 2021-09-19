@@ -1,56 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     padding: 0;
     border: 0;
     margin: 0;
 }
 
-*::selection {background-color: #272;}
 
-*:focus {outline: none;}
+*::selection {
+    background-color: #5b5;
+    color: #151;
+}
 
-html, body {
+*:focus {
+    outline: none;
+}
+
+html,
+body {
     height: 100%;
-    background-color: black;
+    background-color: #000;
 }
 
 .container {
+    background-image: linear-gradient(-45deg, #000 59%, #eee 59%, #eee 60%, #2f2 60%);
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.sign-up-div {
+.form-card * {
+    font-weight: 700;
+}
+
+.form-card {
+    width: 360px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #111;
-}
-
-h3 {
-    color: white;
-    margin-bottom: 10px;
-}
-
-input, button, .sign-up-div {
-    padding: 15px;
+    justify-content: center;
+    background-color: #222;
+    padding: 20px;
     margin: 10px;
+    border-radius: 20px;
+}
+
+.form-card h2 {
+    padding: 10px;
+    align-self: flex-start;
+    color: #eee;
+}
+
+.form-card input, 
+.form-card button {
+    font-size: 1rem;
+    padding: 15px;
+    margin: 5px;
     border-radius: 30px;
 }
 
-input {
-    background-color: #222;
-    color: #5f5;
+.form-card input {
+    background-color: #444;
+    color: #8e8;
 }
 
-button {
+.form-card button {
+    cursor: pointer;
     transition: background-color 0.25s;
-    background-color: #333;
-    color: white;
 }
 
-button:hover {
-    background-color: #262;
+.form-card button:hover {
+    background-color: #8e8;
+}
+
+.form-card button, 
+.form-card h2,
+.form-card p {
+    user-select: none;
+}
+
+.form-card p {
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.25s;
+    font-size: small;
+    font-weight: 500;
+}
+
+.form-card p:hover {
+    color: #8e8;
+}
+
+.invisible-card {
+    display: none;
 }
